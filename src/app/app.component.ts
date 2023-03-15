@@ -11,4 +11,9 @@ export class AppComponent {
   title1 = 'From Variable 1';
   title2 = 'From Variable 2';
   title3 = 'From Variable 3';
+
+  myEvent!: string;
+  onMyEvent($event: string) {
+    this.myEvent = $event;
+  }
 }

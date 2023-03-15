@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-my-first',
@@ -18,5 +18,10 @@ export class MyFirstComponent {
   public coordinates(event: MouseEvent): void {
     this.clientX = event.clientX;
     this.clientY = event.clientY;
+  }
+
+  @Output() myEvent = new EventEmitter<string>();
+  sendEvent() {
+    this.myEvent.emit(this.headerTitle);
   }
 }
