@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todo-angular';
+
+  title1 = 'From Variable 1';
+  title2 = 'From Variable 2';
+  title3 = 'From Variable 3';
 }

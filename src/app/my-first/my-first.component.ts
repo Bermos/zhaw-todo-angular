@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-my-first',
@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-first.component.scss']
 })
 export class MyFirstComponent {
-  headerTitle = 'My first component';
+  @Input() headerTitle = 'My first component';
+  backgroundColor = 'lightgray';
+  textColor = 'red';
   public event!: MouseEvent;
   public clientX = 0;
   public clientY = 0;
