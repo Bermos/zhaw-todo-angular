@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-first.component.scss']
 })
 export class MyFirstComponent {
-
+  headerTitle = 'My first component';
 }
