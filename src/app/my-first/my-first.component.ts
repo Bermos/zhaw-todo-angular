@@ -9,7 +9,7 @@ export class MyFirstComponent {
   @Input() headerTitle = 'My first component';
   backgroundColor = 'lightgray';
   textColor = 'red';
-  public event!: MouseEvent;
+  public event?: MouseEvent;
   public clientX = 0;
   public clientY = 0;
   public onEvent(event: MouseEvent): void {
