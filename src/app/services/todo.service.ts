@@ -1,15 +1,17 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from "rxjs";
+import { environment } from "../../environmnets/environment";
+import { TodoItemListsDTO } from "../model/todoItemListsDTO";
+import { HttpClient } from "@angular/common/http";
 @Injectable({
   providedIn: 'root'
 })
 export class TodoService {
-  private todos = ["Kochen","Einkaufen","Wohnung reinigen"];
-  constructor() {}
-  getTodos(): string[] {
-    return this.todos;
+  private baseUrl: string;
+  constructor(private http: HttpClient) {
+    this.baseUrl = environment.API_BASE_PATH;
   }
-  getObservableTodos():Observable<string[]> {
-    return of(this.todos);
+  getListIDs():Observable<TodoItemListsDTO> {
+    return this.http.get(this.baseUrl + "/api/v1/listids");
   }
 }
