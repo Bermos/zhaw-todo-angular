@@ -13,6 +13,7 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { TooltipDirective } from './shared/directive/tooltip.directive';
 import { TempConverterPipe } from './shared/pipe/temp-converter.pipe';
+import { TempConversionComponent } from './temp-conversion/temp-conversion.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TempConverterPipe } from './shared/pipe/temp-converter.pipe';
     SignupComponent,
     LoginComponent,
     TooltipDirective,
-    TempConverterPipe
+    TempConverterPipe,
+    TempConversionComponent
   ],
   imports: [
     BrowserModule,

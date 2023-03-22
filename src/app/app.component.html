@@ -1,7 +1,6 @@
 <div class="container px-0 app">
   <nav class="fixed-top navbar navbar-light navbar-expand-md bg-faded px-2">
-    <div [routerLink]="['/home']" class="navbar-brand"><img alt="todo-logo"
-                                                            src="assets/todo.svg" width="50px"> Todo App
+    <div [routerLink]="['/home']" class="navbar-brand"><img alt="todo-logo" src="assets/todo.svg" width="50px"> Todo App
     </div>
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
       <span class="navbar-toggler-icon"></span>
@@ -16,10 +15,8 @@
         </li>
       </ul>
       <form class="form-inline ms-auto">
-        <button class="btn btn-secondary" type="button"
-                [routerLink]="['/signup']">Signup</button>
-        <button class="btn btn-primary ms-1" type="button"
-                [routerLink]="['/login']">Login</button>
+        <button class="btn btn-secondary" type="button" [routerLink]="['/signup']">Signup</button>
+        <button class="btn btn-primary ms-1" type="button" [routerLink]="['/login']">Login</button>
       </form>
     </div>
   </nav>
@@ -27,8 +24,7 @@
     <router-outlet></router-outlet>
   </main>
   <footer class="fixed-bottom px-3 mt-4 bg-light">
-    <section class="container d-flex justify-content-center justify-content-lg-between p-4
-border-bottom" >
+    <section class="container d-flex justify-content-center justify-content-lg-between p-4 border-bottom" >
       <!-- Left -->
       <div class="me-5 d-none d-lg-block">
         <span>Get connected with us on social networks:</span>
