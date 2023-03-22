@@ -4,7 +4,8 @@
 <p class="sub-para todo-listinfo">Todo Lists: {{todoLists.count}}</p>
 <section class="container legend">
   <div class="row " *ngFor="let listId of todoLists.todoItemList; let i = index">
-    <div [routerLink]="['/todoitem/',listId ]" class="col-sm-8 py-1 my-1 clickable">List
-      {{i + 1}} : {{listId}}</div>
+    <<div [routerLink]="['/todoitem/',listId ]" [tooltip]="'This is the UUID of a Todo List'"
+          [delay]="200" class="col-sm-8 py-1 my-1 clickable">Todo {{i+1}} : {{listId}}</div>
+
   </div>
 </section>

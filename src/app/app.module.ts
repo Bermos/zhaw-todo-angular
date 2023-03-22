@@ -11,6 +11,7 @@ import { TodoItemsComponent } from './todo-items/todo-items.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
+import { TooltipDirective } from './shared/directive/tooltip.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LoginComponent } from './login/login.component';
     TodoListsComponent,
     TodoItemsComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    TooltipDirective
   ],
   imports: [
     BrowserModule,
