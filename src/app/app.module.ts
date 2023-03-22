@@ -8,19 +8,23 @@ import { TodoListsComponent } from './todo-lists/todo-lists.component';
 import { HttpClientModule } from "@angular/common/http";
 import { ApiModule } from "./openapi-gen";
 import { TodoItemsComponent } from './todo-items/todo-items.component';
+import { FormsModule } from "@angular/forms";
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyFirstComponent,
     TodoListsComponent,
-    TodoItemsComponent
+    TodoItemsComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    ApiModule
+    ApiModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
