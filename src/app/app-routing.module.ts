@@ -5,6 +5,7 @@ import { TodoListsComponent } from "./todo-lists/todo-lists.component";
 import { TodoItemsComponent } from "./todo-items/todo-items.component";
 import { SignupComponent } from "./signup/signup.component";
 import { LoginComponent } from "./login/login.component";
+import { TempConversionComponent } from "./temp-conversion/temp-conversion.component";
 
 const routes: Routes = [
   {
@@ -27,7 +28,10 @@ const routes: Routes = [
     path: 'login',
     component: LoginComponent
   },
-
+  {
+    path: 'temperature',
+    component: TempConversionComponent
+  },
   {
     path: '',
     pathMatch: 'full',
