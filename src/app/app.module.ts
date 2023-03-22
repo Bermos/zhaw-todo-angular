@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { TooltipDirective } from './shared/directive/tooltip.directive';
+import { TempConverterPipe } from './shared/pipe/temp-converter.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TooltipDirective } from './shared/directive/tooltip.directive';
     TodoItemsComponent,
     SignupComponent,
     LoginComponent,
-    TooltipDirective
+    TooltipDirective,
+    TempConverterPipe
   ],
   imports: [
     BrowserModule,
