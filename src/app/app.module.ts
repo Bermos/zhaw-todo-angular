@@ -7,12 +7,14 @@ import { MyFirstComponent } from './my-first/my-first.component';
 import { TodoListsComponent } from './todo-lists/todo-lists.component';
 import { HttpClientModule } from "@angular/common/http";
 import { ApiModule } from "./openapi-gen";
+import { TodoItemsComponent } from './todo-items/todo-items.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyFirstComponent,
-    TodoListsComponent
+    TodoListsComponent,
+    TodoItemsComponent
   ],
   imports: [
     BrowserModule,
