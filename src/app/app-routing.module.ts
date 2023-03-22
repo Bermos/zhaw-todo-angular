@@ -4,6 +4,7 @@ import { MyFirstComponent } from "./my-first/my-first.component";
 import { TodoListsComponent } from "./todo-lists/todo-lists.component";
 import { TodoItemsComponent } from "./todo-items/todo-items.component";
 import { SignupComponent } from "./signup/signup.component";
+import { LoginComponent } from "./login/login.component";
 
 const routes: Routes = [
   {
@@ -22,6 +23,11 @@ const routes: Routes = [
     path: 'signup',
     component: SignupComponent
   },
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+
   {
     path: '',
     pathMatch: 'full',

@@ -8,8 +8,9 @@ import { TodoListsComponent } from './todo-lists/todo-lists.component';
 import { HttpClientModule } from "@angular/common/http";
 import { ApiModule } from "./openapi-gen";
 import { TodoItemsComponent } from './todo-items/todo-items.component';
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +18,16 @@ import { SignupComponent } from './signup/signup.component';
     MyFirstComponent,
     TodoListsComponent,
     TodoItemsComponent,
-    SignupComponent
+    SignupComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     ApiModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
